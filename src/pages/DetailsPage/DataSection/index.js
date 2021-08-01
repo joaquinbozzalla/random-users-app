@@ -35,9 +35,9 @@ function DataSection({ profile }) {
 
     return <div className={css.profileData}>
         {
-            getColumnsContent().map(columnContent =>
-                <div className={css.dataColumn}>
-                    {columnContent.map(([title, value]) => <span className={css.dataLine}><span className={css.dataTitle}>{title}: </span>{value}</span>)}
+            getColumnsContent().map( (columnContent, index) =>
+                <div key={index} className={css.dataColumn}>
+                    {columnContent.map(([title, value], index) => <span key={index} className={css.dataLine}><span className={css.dataTitle}>{title}: </span>{value}</span>)}
                 </div>
             )
         }
