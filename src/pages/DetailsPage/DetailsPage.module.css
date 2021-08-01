@@ -1,0 +1,40 @@
+.mainContainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profileImage {
+    border-radius: 24px;
+    min-width: 300px;
+    margin-top: 12px;
+}
+ 
+.nameContainer {
+  text-align: center;
+  font-size: 3em;
+}
+
+.goBackButton {
+  margin-top: 12px;
+  margin-bottom: 12px;
+  background-color: transparent;
+  border: black solid 2px;
+  border-radius: 18px;
+  font-size: 1.4em;
+  padding: 6px 12px;
+  transition: 200ms;
+}
+
+.goBackButton:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 1);
+  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.8);
+  color: #F2F2F2;
+  border: transparent solid 2px;
+}
+
+.goBackButton:active {
+  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.3);
+}

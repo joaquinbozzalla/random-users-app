@@ -1,0 +1,21 @@
+.profilesPageTitle {
+    text-align: center;
+    font-size: 4em;
+    font-weight: 300;
+}
+
+.profilesContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-gap: 0 12px;
+}
+
+.profilesContainer > * {
+    margin: 12px;
+}
+
+.errorMessage {
+    text-align: center;
+    font-size: 2em;
+    font-weight: 300;
+}
